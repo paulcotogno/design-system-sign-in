@@ -1,0 +1,31 @@
+@mixin text-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+@mixin text-headline {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.1rem;
+  line-height: 4.6rem;
+}
+
+@mixin text-default {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+@mixin text-small {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}

@@ -2,11 +2,14 @@
 @import "astracts/variables";
 @import "astracts/functions";
 @import "astracts/mixins";
+@import "astracts/mixins-text";
 @import "astracts/placeholders";
 
 /* BASE */
 @import "base/reset";
 @import "base/font-import";
+@import "base/text-class";
+
 
 /* THEME */
 @import "themes/default-theme";

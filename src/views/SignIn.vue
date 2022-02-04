@@ -1,12 +1,14 @@
 <template>
   <div>
-    <h1>Sign in</h1>
+    <Text tag="h1" type="title">Sign in</Text>
   </div>
 </template>
 
 <script>
+import Text from "@/components/Text";
 export default {
-  name: "SignIn"
+  name: "SignIn",
+  components: {Text}
 }
 </script>
 

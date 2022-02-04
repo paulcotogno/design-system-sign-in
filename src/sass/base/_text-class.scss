@@ -1,0 +1,52 @@
+@import "src/sass/astracts/mixins-text";
+
+.text--title {
+  @include text-title;
+}
+
+.text--headline {
+  @include text-headline;
+}
+
+.text--default {
+  @include text-default
+}
+
+.text--small {
+  @include text-small
+}
+
+.text--greys-black {
+  color: var(--color-greys-black);
+}
+
+.text--greys-regular {
+  color: var(--color-greys-regular-grey);
+}
+
+.text--greys-medium {
+  color: var(--color-greys-medium-grey);
+}
+
+.text--greys-light {
+  color: var(--color-greys-light-grey);
+}
+
+.text--yellows-yellow {
+  color: var(--color-yellows-yellow);
+}
+
+.text--yellows-light-yellow {
+  color: var(--color-yellows-light-yellow);
+}
+
+.text--others-blue {
+  color: var(--color-others-blue);
+}
+
+.text--others-red {
+  color: var(--color-others-red);
+}
+
+
+

@@ -1,12 +1,22 @@
 <template>
-  <Text tag="p" type="small" color="others-blue">Exemple de text</Text>
-  <router-view/>
+  <Card>
+    <router-view/>
+  </Card>
 </template>
 <script>
-import  Text from "@/components/Text"
+import Card from "@/components/Card";
 export default {
-  components : {Text}
+  components : {Card}
 }
 </script>
-<style>
+<style lang="scss">
+  #app {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-yellows-yellow-to-red-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
 </style>

@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@vue/cli-plugin-babel': ~4.5.0
   '@vue/cli-plugin-eslint': ~4.5.0
+  '@vue/cli-plugin-router': ~4.5.0
   '@vue/cli-service': ~4.5.0
   '@vue/compiler-sfc': ^3.0.0
   babel-eslint: ^10.1.0
@@ -10,14 +11,17 @@ specifiers:
   eslint: ^6.7.2
   eslint-plugin-vue: ^7.0.0
   vue: ^3.0.0
+  vue-router: ^4.0.0-0
 
 dependencies:
   core-js: 3.21.0
   vue: 3.2.29
+  vue-router: 4.0.12_vue@3.2.29
 
 devDependencies:
   '@vue/cli-plugin-babel': 4.5.15_eb60e2eb44e320fbd97b70b01071386f
   '@vue/cli-plugin-eslint': 4.5.15_159f9ca94908a7070131e2c321d72521
+  '@vue/cli-plugin-router': 4.5.15_@vue+cli-service@4.5.15
   '@vue/cli-service': 4.5.15_@vue+compiler-sfc@3.2.29
   '@vue/compiler-sfc': 3.2.29
   babel-eslint: 10.1.0_eslint@6.8.0
@@ -1799,6 +1803,10 @@ packages:
     optionalDependencies:
       prettier: 2.5.1
     dev: true
+
+  /@vue/devtools-api/6.0.0-beta.21.1:
+    resolution: {integrity: sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==}
+    dev: false
 
   /@vue/preload-webpack-plugin/1.1.2_502c618fc8a7d35df07e93275324a2d0:
     resolution: {integrity: sha512-LIZMuJk38pk9U9Ur4YzHjlIyMuxPlACdBIHH9/nGYVTsaGKOSnSuELiE8vS9wa+dJpIYspYUOqk+L1Q4pgHQHQ==}
@@ -8447,6 +8455,15 @@ packages:
       webpack: 4.46.0
     dev: true
     optional: true
+
+  /vue-router/4.0.12_vue@3.2.29:
+    resolution: {integrity: sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vue/devtools-api': 6.0.0-beta.21.1
+      vue: 3.2.29
+    dev: false
 
   /vue-style-loader/4.1.3:
     resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==}

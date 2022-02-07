@@ -1,5 +1,5 @@
 <template>
-  <div class="stack" :class="{'stack--recursive' : recursive}" :style="{'--space' : space}">
+  <div class="stack" :class="{'stack--recursive' : recursive}">
     <slot ></slot>
   </div>
 </template>
@@ -17,10 +17,15 @@ export default {
       default: false
     }
   },
+  mounted() {
+    for (const c of this.$el.children) {
+      c.style.setProperty("--space", this.space)
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style>
 .stack {
   display: flex;
   flex-direction: column;

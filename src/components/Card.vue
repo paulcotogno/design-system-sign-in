@@ -10,14 +10,17 @@ export default {
 }
 </script>
 
-<style scoped >
+<style scoped lang="scss">
+@import "../sass/astracts/_mixins.scss";
   .card {
-    min-height: 70vh;
     width: 63rem;
     background-color: var(--color-greys-white);
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     border-radius: 2rem;
     padding: 5rem 11rem;
+
+    @include grey-box-shadow;
+
   }
 </style>

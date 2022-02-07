@@ -1,7 +1,6 @@
 <template>
   <div class="stack" :class="{'stack--recursive' : recursive}">
     <slot ></slot>
-
   </div>
 </template>
 
@@ -19,7 +18,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$el.children)
     for (const c of this.$el.children) {
       c.style.setProperty("--space", this.space)
     }

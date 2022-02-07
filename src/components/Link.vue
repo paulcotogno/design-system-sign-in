@@ -1,5 +1,5 @@
 <template>
-<router-link :to="to" class="link"><Text color="yellows-yellow" tag="span"><slot/></Text></router-link>
+  <router-link :to="to" class="link"><Text color="yellows-yellow" tag="span"><slot/></Text></router-link>
 </template>
 
 <script>
@@ -8,8 +8,7 @@ export default {
   name: "Link",
   props: {
     to: {
-      type: String,
-      default: "/"
+      type: Object
     },
   },
   components : {

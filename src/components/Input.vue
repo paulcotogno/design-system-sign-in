@@ -37,7 +37,6 @@ export default {
     @import "src/sass/astracts/mixins-text";
 
     .input-container{
-        margin-top: 3rem;
         width: 100%;
         input{
             width: 100%;

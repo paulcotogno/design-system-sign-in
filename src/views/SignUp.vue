@@ -3,30 +3,27 @@
     <Stack space="2.3rem" class="u--align-items-center">
       <img src="@/assets/logo.png" alt="Logo of the site" class="logo"/>
       <Stack space="0.2rem" class="u--align-items-center">
-        <Text tag="h1" type="title">Sign in</Text>
-        <Text>Do you already have an account ?
-          <Link :to="{name:'SignUp'}">Sign up here</Link>
+        <Text tag="h1" type="title">Sign up</Text>
+        <Text>Don’t you have an account yet ?
+          <Link :to="{name:'SignIn'}">Create an account</Link>
         </Text>
       </Stack>
     </Stack>
-    <form @submit="signUp">
+    <form @submit="signIn">
       <Stack space="6rem">
         <Stack space="3.2rem">
           <Text>Username</Text>
-          <input type="text" v-model="userName" required>
+          <input type="text" v-model="username" required>
           <Text>Password</Text>
-          <input type="text" v-model="password" required>
+          <input type="password" v-model="password" required>
           <Stack space="2.4rem">
-            <Text>Password Again</Text>
-            <input type="password" v-model="passwordAgain" required>
-            <Link :to="{name : 'ForgottenPassword'}">I forgot my password</Link>
+            <input type="checkbox" v-model="stayLogged">
             <Text>Stay logged in</Text>
           </Stack>
         </Stack>
         <button type="submit">Sign Up</button>
       </Stack>
     </form>
-
   </Stack>
 </template>
 
@@ -36,22 +33,24 @@ import Stack from "@/components/Stack";
 import Link from "@/components/Link";
 
 export default {
-  name: "SignIn",
+  name: "SignUp",
   components: {Link, Stack, Text},
   data() {
     return {
-      userName: "",
-      password : "",
-      passwordAgain : "",
+      username: "",
+      password: "",
+      stayLogged: false,
 
     }
   },
   methods: {
-    signUp(e) {
+    signIn(e) {
       e.preventDefault()
-      console.log("Sign Up")
+      console.log("Sign In")
+      this.$store.commit("setUsername", this.username)
+      this.$store.commit("setPassword", this.password)
 
-      this.$router.push({name : "SignUp"})
+      this.$router.push({name : "ConfirmConnected"})
     }
   },
 }

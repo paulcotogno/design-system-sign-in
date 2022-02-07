@@ -36,8 +36,6 @@ export default {
   margin-block: 0;
 }
 
-
-
 .stack > * + * {
   margin-block-start: var(--space, 1.5rem);
 }

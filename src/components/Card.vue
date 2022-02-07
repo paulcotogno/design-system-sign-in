@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../sass/astracts/_mixins.scss";
+@import "../sass/abstracts/_mixins.scss";
   .card {
     width: 63rem;
     background-color: var(--color-greys-white);

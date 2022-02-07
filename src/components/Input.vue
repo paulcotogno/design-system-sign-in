@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "src/sass/astracts/mixins-text";
+    @import "../sass/abstracts/mixins-text";
 
     .input-container{
         width: 100%;

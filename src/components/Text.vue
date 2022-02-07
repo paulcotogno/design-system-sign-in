@@ -29,7 +29,6 @@ export default {
     className() {
       return `text text--${this.type} text--${this.color}`;
     }
-  }
-  ,
+  },
 }
 </script>

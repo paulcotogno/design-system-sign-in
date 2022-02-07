@@ -3,6 +3,7 @@ import SignUp from "@/views/SignUp";
 import SignIn from "@/views/SignIn";
 import ForgottenPassword from "@/views/ForgottenPassword";
 import ConfirmConnected from "@/views/ConfirmConnected";
+import ConfirmSendMail from "@/views/ConfirmSendMail";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/confirm-connected',
     name: 'ConfirmConnected',
     component: ConfirmConnected
+  },
+  {
+    path: '/confirm-mail-sent',
+    name: 'ConfirmSendMail',
+    component: ConfirmSendMail
   },
 
 ]

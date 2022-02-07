@@ -2,7 +2,7 @@
   <Stack space="5rem" class="u--text-align-center">
     <Stack space="2.3rem" class="u--align-items-center ">
       <img src="@/assets/sign-in-logo.svg" alt="Logo of the site" class="logo"/>
-      <Text tag="h1" type="title">A mail has been sent to reset your password !</Text>
+      <Text tag="h1" :type="'title'">A mail has been sent to reset your password !</Text>
     </Stack>
     <Link :to="{name:'SignIn'}">Try to sign in again</Link>
   </Stack>

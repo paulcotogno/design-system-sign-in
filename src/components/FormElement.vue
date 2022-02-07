@@ -1,6 +1,6 @@
 <template>
     <div class="input-container">
-        <Text v-if="label" class="label" type='small' >{{ label }}</Text>
+        <Text class="label" :type="'small'" >{{ label }}</Text>
         <input :type="inputType" :placeholder="placeholder">
     </div>
 </template>
@@ -8,14 +8,14 @@
 <script>
 import Text from '@/components/Text';
 export default {
-    name: "Input",
+    name: "FormElement",
     components: {
         Text
     },
     props: {
         label :{
             type: String,
-            default: undefined,
+            default: 'label',
         },
         inputType: {
             type: String,
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "src/sass/astracts/mixins-text";
+    @import "src/sass/abstracts/mixins-text";
 
     .input-container{
         width: 100%;

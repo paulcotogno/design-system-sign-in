@@ -12,9 +12,10 @@
     <form @submit="signIn">
       <Stack space="6rem">
         <Stack space="3.2rem">
-          <Input placeholder="johndoe@mail.com" v-model="username" type="email" label="Username or email" name="email" />
-          <Input placeholder="**********" v-model="password" type="password" label="Password" name="password" />
+          <FormElement :placeholder="'johndoe@mail.com'" v-model="username" :type="'email'" :label="'Username or email'" :name="'email'" />
+          <FormElement :placeholder="'**********'" v-model="password" :type="'password'" :label="'Password'" :name="'password'" />
           <Stack space="2.4rem">
+            <Link :to="{name : 'ForgottenPassword'}">I forgot my password</Link>
             <input type="checkbox" v-model="stayLogged">
             <Text>Stay logged in</Text>
           </Stack>
@@ -29,12 +30,12 @@
 import Text from "@/components/Text";
 import Stack from "@/components/Stack";
 import Link from "@/components/Link";
-import Input from '@/components/Input';
+import FormElement from '@/components/FormElement';
 import Button from '@/components/Button';
 
 export default {
   name: "SignUp",
-  components: {Link, Stack, Text, Input, Button},
+  components: {Link, Stack, Text, FormElement, Button},
   data() {
     return {
       username: "",

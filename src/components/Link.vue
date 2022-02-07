@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" class="link"><Text color="yellows-yellow" tag="span"><slot/></Text></router-link>
+  <router-link :to="to" class="link"><Text :color="'yellows-yellow'" :tag="'span'"><slot/></Text></router-link>
 </template>
 
 <script>

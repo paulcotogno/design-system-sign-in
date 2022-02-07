@@ -12,11 +12,11 @@
     <form @submit="signUp">
       <Stack space="6rem">
         <Stack space="3.2rem">
-          <Input label="Username" v-model="userName" inputType="text" />
-          <Input label="Password" v-model="password" inputType="password" />
+          <FormElement :label="'Username'" v-model="userName" :inputType="'text'" />
+          <FormElement :label="'Password'" v-model="password" :inputType="'password'" />
           <Stack space="2.4rem">
-            <Input label="Password again" v-model="passwordAgain" inputType="password" />
-            <Link :to="{name : 'ForgottenPassword'}">I forgot my password</Link>
+            <FormElement :label="'Password again'" v-model="passwordAgain" :inputType="'password'" />
+            <input type="checkbox" v-model="stayLogged">
             <Text>Stay logged in</Text>
           </Stack>
         </Stack>
@@ -32,11 +32,11 @@ import Text from "@/components/Text";
 import Stack from "@/components/Stack";
 import Link from "@/components/Link";
 import Button from '@/components/Button';
-import Input from '@/components/Input';
+import FormElement from '@/components/FormElement';
 
 export default {
   name: "SignIn",
-  components: {Link, Stack, Text,Button,Input},
+  components: {Link, Stack, Text,Button,FormElement},
   data() {
     return {
       userName: "",
